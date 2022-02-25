@@ -1,2 +1,2 @@
 # projectEuler
-atividade do algoritimo e matematica do site project euler
+Atividade de algoritimo e matematica do site project euler
