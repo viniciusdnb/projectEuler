@@ -16,6 +16,7 @@ function arrMultiple(numberNature, numberListMultiple)
 
 function filterArr(arr)
 {
+//retira valores null - 0 - undefind
   var x = arr.filter(function(a){return a})
   return x;
 }
@@ -38,6 +39,7 @@ function multipleComun(arr1, arr2)
 
 function sumArray(arr)
 {
+//soma todos os elementod de um array
   var sum = arr.reduce(function(sum,i){return sum+i});
   return sum;
 }
