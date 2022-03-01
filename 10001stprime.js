@@ -23,8 +23,10 @@ function gerarArr(index)
   var arr = [];
   var max = index * 100;
   var key = 0;
+    var porcentagem = 0;
     var p = 0;
-    var l = 0
+    var loading = 0;
+   
    // console.log("iniciando o calculo");
   for(let i = 2; i < max; i++)
   {
@@ -32,11 +34,27 @@ function gerarArr(index)
     {
       //console.log(i);
       arr[key] = i;
-      key++;
+      key++;          
+        
+        porcentagem = key / index * 100;
+        
+        p = Math.round(porcentagem);
+
+        if(p % 5 == 0)
+        {
+            console.log("carregando " + p + "%")
+        }
+         
+              
+              
+          
+             
+          
 
         if(arr.length == index)
         {
-            //console.log("100 % calculado")
+  
+            
             return arr;
         }   
     }
