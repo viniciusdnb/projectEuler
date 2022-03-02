@@ -19,8 +19,6 @@ function listaAbaixoDe(number, posicao=false)
         
         
         result = 0;
-
-
         
         for(let i = 1; i <= c; i++)
         {
@@ -29,7 +27,7 @@ function listaAbaixoDe(number, posicao=false)
             {
                 result++;
             }
-         
+
             if(result > 2)
             {
                 
@@ -38,7 +36,8 @@ function listaAbaixoDe(number, posicao=false)
             
         }
         
-        
+        if(result <= 2)
+        {
             if(posicao && p == posicao)
             {
                  console.log( "posição "+ p + " numero primo: " + c + "\n");
@@ -48,7 +47,7 @@ function listaAbaixoDe(number, posicao=false)
             sum = sum + c;
            
          p++;          
-        
+        }
 
         
         
