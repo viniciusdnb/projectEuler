@@ -56,3 +56,5 @@ function listaAbaixoDe(number, posicao=false)
    console.log(sum + "\n");
 }
 listaAbaixoDe(2000000);
+
+//142913828922
