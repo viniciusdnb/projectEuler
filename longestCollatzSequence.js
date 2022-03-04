@@ -38,14 +38,16 @@ function calculo(n)
 function longestCollatzSequence(arr) 
 {
   var len = arr.length;
-  var max = -Infinity;
+  var max = 0;
   var key; 
+
   while (len--) 
-  {
+  {//começa a percorrer o array pela ultima posicao e sobindo
     if (arr[len] > max) 
-    {
+    {//verifica se o valor do elemento na posição do array é maior que o max 
       max = arr[len];
       key = len;
+    //a cada interaçao do array caso o valor seja maior que o max encontrado anteriormente é substituido pelo valor atual 
     }
   }
   return  "numero: " + key + " sequencia de:  " + max ;
